@@ -42,7 +42,7 @@ Create a subscription to the team event `team_join` and a bot event for `message
 
 ### Interactive Messages
 
-Click on `Interactive Messages` on the left side navigation, and enable it. Input your *Request URL*. The app listens for events at the path `/slack/attachments`, so your URL may look like `https://mymessagemenusample.ngrok.io/slack/events`.
+Click on `Interactive Messages` on the left side navigation, and enable it. Input your *Request URL*. The app listens for events at the path `/slack/attachments`, so your URL may look like `https://mymessagemenusample.ngrok.io/slack/attachments`.
 
 Save your changes.
 
