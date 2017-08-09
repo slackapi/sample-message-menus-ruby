@@ -19,7 +19,7 @@ $orders = {}
 Menu.new
 
 class API < Sinatra::Base
-  # Send response of message to response_urlj
+  # Send response of message to response_url
   def self.send_response(response_url, msg)
     url = URI.parse(response_url)
     http = Net::HTTP.new(url.host, url.port)
@@ -291,7 +291,7 @@ class Bot
       }]
 
     order[:options].map { |c, n| 
-      choice_name = Menu.choice_name_for_id(n, c)
+      choice_name = Menu.choice_name_for_id(c, n)
       msg_fields.push({ title: c.capitalize, value: choice_name })
     }
 
