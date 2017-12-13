@@ -115,9 +115,9 @@ class Menu
   end
 
   def self.choice_name_for_id(option_id, choice_id)
-    option = self.options.find {|o| o[:id] == choice_id}
+    option = self.options.find {|o| o[:id] == option_id}
     if !option.nil?
-      choice = option[:choices].find {|c| c[:id] == option_id}
+      choice = option[:choices].find {|c| c[:id] == choice_id}
       return choice[:name]
     end
     return false
