@@ -18,14 +18,16 @@ GEM
     json (2.1.0)
     minitest (5.10.2)
     multipart-post (2.0.0)
-    mustermann (1.0.0)
-    rack (2.0.3)
-    rack-protection (2.0.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.1.2)
+    rack-protection (2.0.2)
       rack
-    sinatra (2.0.0)
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.2)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack-protection (= 2.0.2)
       tilt (~> 2.0)
     slack-ruby-client (0.8.1)
       activesupport
@@ -36,7 +38,7 @@ GEM
       json
       websocket-driver
     thread_safe (0.3.6)
-    tilt (2.0.7)
+    tilt (2.0.10)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     websocket-driver (0.6.5)
@@ -48,7 +50,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.2, >= 2.2.1)
-  sinatra (~> 2.0.0)
+  sinatra (~> 2.0.2)
   slack-ruby-client (~> 0.8.1)
 
 RUBY VERSION
