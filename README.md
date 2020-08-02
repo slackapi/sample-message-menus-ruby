@@ -40,6 +40,8 @@ Turn on Event Subscriptions for the Slack app. You must input and verify a Reque
 
 Create a subscription to the team event `team_join` and a bot event for `message.im`. Save your changes.
 
+Add `chat:write` and `im:write` as `Bot Token Scopes` from OAuth & Permissions
+
 ### Interactive Messages
 
 Click on `Interactive Messages` on the left side navigation, and enable it. Input your *Request URL*. The app listens for events at the path `/slack/attachments`, so your URL may look like `https://mymessagemenusample.ngrok.io/slack/attachments`.
