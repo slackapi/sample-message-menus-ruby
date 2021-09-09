@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This piece of sample code has been archived and is no longer maintained. The approaches used may no longer be relevant, or even work correctly. For more up to date samples, check out some of the other repositories on https://github.com/slackapi
+
 # Message Menus API Sample for Ruby
 
 [Message menus](https://api.slack.com/docs/message-menus) are a feature of the Slack Platform
