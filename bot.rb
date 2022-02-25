@@ -4,7 +4,7 @@ require 'slack-ruby-client'
 require 'json'
 require 'uri'
 require 'net/http'
-require_relative 'Menu'
+require_relative 'menu'
 
 Slack.configure do |config|
   config.token = ENV['SLACK_BOT_TOKEN']
@@ -167,7 +167,7 @@ class Bot
   # Send intro message to start order
   def self.intro(user_id)
     # Open IM
-    res = $client.im_open(user: user_id)
+    res = $client.conversations_open(users: user_id)
     # Attachment with order:start callback ID
     attachments = [{
       color: '#5A352D',
